@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width,user-scalable=no">
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <svg width="400px" height="200px" viewbox="0 0 400 200" >
+      <rect width="400px" height="200px" fill="white" stroke="black" stroke-width="3"/>
+      <text fill="black" font-size="63" font-family="Harrington",fantasy. x="2" y="115">Sergio A. Díaz</text>
+      <polyline points="0,200 35,150 100,150 150,150 365,150 400,200" fill="purple" stroke="black" stroke.width="4"/>
+      <polyline points="0,0 35,50 100,50 150,50 365,50 400,0" fill="red" stroke="black" stroke.width="4"/>
+      <text fill="white" font-size="45" font-family="papyrus",fantasy x="68" y="188">Math Teacher</text>
+      <text fill="white" font-size="45" font-family="papyrus",fantasy x="68" y="40">Programmer</text>
+    </svg>
+    <h1>Curriculum Vitae</h1>
+
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="educacion.html">Educación</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+    </ul>
+
+    <h1>Información Personal</h1>
+    <ul>
+      <li><strong>Nombre :</strong>Sergio Andrés Díaz Vera</li>
+      <li><strong>Edad :</strong> 25 años </li>
+      <li><strong>Fecha de Nacimiento :</strong> 24 de junio de 1992</li>
+      <li><strong>Lugar de Nacimiento :</strong>Bogotá ,Colombia </li>
+    </ul>
+    <h2>Educación</h2>
+     <table border="1" cellspacing="0"> <!--Coloco 5 columnas pues creo necesario nombrar el título obtenido-->
+       <tr>
+         <th>Año</th>
+         <th>Título</th>
+         <th>Institución</th>
+         <th>Lugar</th>
+         <th>¿Culminó?</th>
+       </tr>
+         <th>2009</th>
+         <th>Bachiller Comercial</th>
+         <th>Colegio Ciudad de Cali</th>
+         <th>Bogotá,Colombia</th>
+         <th>Sí</th>
+       <tr>
+         <th>2010</th>
+         <th>Ingeniería de Sistemas</th>
+         <th>Universidad Autónoma de Colombia </th>
+         <th>Bogotá,Colombia</th>
+         <th>No</th>
+       </tr>
+         <th>2013</th>
+         <th>Matemática Pura</th>
+         <th>Universidad Nacional de Colombia </th>
+         <th>Bogotá,Colombia</th>
+         <th>No</th>
+       <tr>
+         <th>2016</th>
+         <th>Estadística</th>
+         <th>Universidad Nacional de Colombia </th>
+         <th>Bogotá,Colombia</th>
+         <th>En progreso</th>
+       </tr>
+     </table><br/>
+     <form autocomplete="on" >
+       <legend><strong>Agregar Estudios<strong></legend>
+         <label for="año">Año:</label>
+        <select name="año" > <!--pensé en usar algún tipo de ciclo para hacerlo pero por si solo html no lo hace-->
+          <option value="2017" selected="selected">2017</option><!--demasiado engorroso-->
+          <option value="2016" >2016</option>
+          <option value="2015" >2015</option>
+          <option value="2014" >2014</option>
+          <option value="2013" >2013</option>
+          <option value="2012" >2012</option>
+          <option value="2011" >2011</option>
+          <option value="2010" >2010</option>
+          <option value="2009" >2009</option>
+          <option value="2008" >2008</option>
+          <option value="2007" >2007</option>
+          <option value="2006" >2006</option>
+        </select><br/>
+        <label for="Institución">Institución : </label>
+        <input type="text" name="Institución" required placeholder="Ej:Universidad Nacional"/><br/>
+
+        <p><strong>Lugar:</strong><!--quice probar otras etiquetasde enunciado no solo label, sin embargo fue igual-->
+           <textarea name="Lugar" rows="1" cols="20" placeholder="Ej:Bogotá, Colombia"></textarea>
+        </p>
+        <p>
+          <strong>¿Cúlminó? :</strong> Sí<input type="radio" name="sí"/> No <input type="radio" name="no" >
+        </p>
+        <input type="button" name="Enviar" value="Enviar">
+     </form>
+     <footer>
+       <p>Derechos Reservados</p>
+       <ul>
+         <li><strong>Correo Electrónico :</strong> seadiazve@unal.edu.co</li>
+         <li><strong>Teléfono :</strong>310-317-14-54</li>
+         <li><strong>Facebook :</strong><a href="https://www.facebook.com/sergio.diazvera" target="_blank">sergio.diazvera</a></li>
+         <li><strong>Dirección :</strong>Carrea 87 #88-34 , Bogotá,Colombia </li>
+       </ul>
+     </footer>
+  </body>
+</html>
